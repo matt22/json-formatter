@@ -35,7 +35,7 @@ You can install `dist` as a local, unpacked extension in Chrome with developer m
 
 ### How does it detect JSON?
 
-This turns out to be a complex thing to get right in a bulletproof way. In most cases it's based on the `Content-Type` header but in some cases it's necessary to inspect the 'page' strucure and see if it looks like a JSON endpoint. This is designed to work as fast as possible with no perceivable impact on browsing.
+This turns out to be a complex thing to get right in a bulletproof way. In most cases it's based on the `Content-Type` header but in some cases it's necessary to inspect the 'page' structure and see if it looks like a JSON endpoint. This is designed to work as fast as possible with no perceivable impact on browsing.
 
 ### Why are large numbers not displayed accurately?
 
@@ -57,6 +57,6 @@ Historically, the JavaScript standard explicitly stated that object keys can be 
 
 ##### But I just want to see exactly what the server spits out
 
-For now, your best option is to just use the "Raw" button to see the raw JSON. This is what the server sent. The "Parsed" buttons represents what you'll get from `JSON.parse`.
+For now, your best option is to just use the "Raw" button to see the raw JSON. This is what the server sent. The "Parsed" button represents what you'll get from `JSON.parse`.
 
 In future JSON Formatter might switch from using `JSON.parse` to a custom parser (if performance allows) in order to detect when a value has been 'changed' by parsing and show an appropriate warning.
